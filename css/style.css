@@ -5,11 +5,16 @@
 
 #about {
   margin-top: 150px; }
+  #about .img--block {
+    margin-bottom: 20px; }
+  #about img {
+    border-radius: 50%; }
 
 * {
   box-sizing: border-box; }
 
 body {
-  background-color: #D9CB9E; }
+  background-color: #D9CB9E;
+  font-family: 'Lato', sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
