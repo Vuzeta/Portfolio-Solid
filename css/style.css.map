@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAQ;EACJ,gBAAgB,ECAL,OAAO;EDClB,SAAE;IACE,KAAK,ECDC,OAAO;;ACFrB,MAAO;EACH,UAAU,EAAE,KAAK;;ACIrB,CAAE;EACE,UAAU,EAAE,UAAU;;AAG1B,IAAK;EACD,gBAAgB,EFVD,OAAO",
+"sources": ["../sass/partials/navbar.scss","../sass/partials/variables.scss","../sass/partials/about.scss","../sass/style.scss"],
+"names": [],
+"file": "style.css"
+}
