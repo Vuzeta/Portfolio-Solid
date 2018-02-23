@@ -1,9 +1,11 @@
-.navbar a {
-  color: #2C3E50;
-  font-size: 20px; }
-.navbar .logo-name {
-  margin: auto 2em;
-  font-weight: bold; }
+.navbar {
+  background-color: #ECF0F1; }
+  .navbar a {
+    font-size: 20px;
+    font-weight: 400; }
+  .navbar .logo-name {
+    margin: auto 2em;
+    font-weight: 800; }
 
 #about {
   margin-top: 150px;
@@ -11,13 +13,16 @@
   #about img {
     border-radius: 50%; }
   #about h5 {
-    font-size: 25px; }
+    font-size: 25px;
+    font-weight: 400; }
   #about h1 {
     font-size: 35px;
     font-weight: bold; }
   #about .lead {
+    font-weight: 400;
     font-style: italic;
-    color: #DC3522; }
+    color: #30DB60;
+    margin: 0; }
   #about .text-biography {
     margin: 10px; }
 
@@ -41,15 +46,47 @@
   #contact img {
     margin: auto 5px; }
 
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .navbar-brand {
+    visibility: hidden; }
+
+  #about h1,
+  #about h5,
+  #about .lead {
+    margin-bottom: -20px;
+    font-size: 25px; }
+  #about h1 {
+    font-size: 40px; }
+  #about .lead {
+    margin-bottom: 10px;
+    font-size: 25px; }
+  #about p {
+    font-size: 20px; }
+
+  #technology img {
+    margin: 20px auto; }
+
+  #projects h5 {
+    font-size: 25px; }
+  #projects p {
+    font-size: 20px; }
+  #projects a {
+    font-size: 20px; }
+
+  #contact h5 {
+    font-size: 25px; }
+  #contact p {
+    font-size: 20px; } }
 * {
   box-sizing: border-box; }
 
 body {
-  background-color: #ECF0F1;
+  background-color: #fff;
   font-family: 'Lato', sans-serif; }
 
 .admission {
   margin: 20px auto;
-  font-size: 40px; }
+  font-size: 40px;
+  font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */

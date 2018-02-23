@@ -1,11 +1,12 @@
 .navbar {
+    background-color: $color-ghost;
     a {
-        color: $color-fonts;
         font-size: $font-heading-5;
+        font-weight: 400;
     }
 
     .logo-name {
         margin: auto 2em;
-        font-weight: bold;
+        font-weight: 800;
     }
 }

@@ -1,0 +1,58 @@
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+    //Section Header
+    .navbar-brand {
+        visibility: hidden;
+    } 
+    //Section About
+    #about {
+        h1,
+        h5,
+        .lead {
+            margin-bottom: -20px;
+            font-size: 25px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .lead {
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+
+        p {
+            font-size: $font-heading-5;
+        }
+    } 
+    //Section Technology
+    #technology {
+        img {
+            margin: 20px auto;
+        }
+    } 
+    //Section Projects
+    #projects {
+
+        h5 {
+            font-size: 25px;
+        }
+        p {
+            font-size: $font-heading-5;
+        }
+        a {
+            font-size: 20px;
+        }
+    } 
+    //Section Contact
+    #contact {
+        h5 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: $font-heading-5;
+        }
+    }
+}
