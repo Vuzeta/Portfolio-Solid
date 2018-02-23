@@ -1,20 +1,55 @@
-.navbar {
-  background-color: #DC3522; }
-  .navbar a {
-    color: #2A2C2B; }
+.navbar a {
+  color: #2C3E50;
+  font-size: 20px; }
+.navbar .logo-name {
+  margin: auto 2em;
+  font-weight: bold; }
 
 #about {
-  margin-top: 150px; }
-  #about .img--block {
-    margin-bottom: 20px; }
+  margin-top: 150px;
+  text-align: center; }
   #about img {
     border-radius: 50%; }
+  #about h5 {
+    font-size: 25px; }
+  #about h1 {
+    font-size: 35px;
+    font-weight: bold; }
+  #about .lead {
+    font-style: italic;
+    color: #DC3522; }
+  #about .text-biography {
+    margin: 10px; }
+
+#technology img {
+  margin: 10px; }
+
+#projects .card {
+  margin: 20px auto;
+  box-shadow: 0 8px 6px -6px black; }
+#projects h5 {
+  font-size: 20px;
+  font-weight: bold; }
+
+#contact {
+  margin-bottom: 50px; }
+  #contact h5 {
+    font-size: 20px;
+    font-weight: bold; }
+  #contact p {
+    font-size: 18px; }
+  #contact img {
+    margin: auto 5px; }
 
 * {
   box-sizing: border-box; }
 
 body {
-  background-color: #D9CB9E;
+  background-color: #ECF0F1;
   font-family: 'Lato', sans-serif; }
+
+.admission {
+  margin: 20px auto;
+  font-size: 40px; }
 
 /*# sourceMappingURL=style.css.map */

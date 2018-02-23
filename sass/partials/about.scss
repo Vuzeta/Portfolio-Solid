@@ -1,10 +1,21 @@
 #about {
     margin-top: 150px;
-    
-    .img--block {
-        margin-bottom: 20px;
-    }
+    text-align: center;
     img {
         border-radius: 50%;
+    }
+    h5 {
+        font-size: 25px;
+    }
+    h1 {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .lead {
+        font-style: italic;
+        color: $color-junior;
+    }
+    .text-biography {
+        margin: 10px;
     }
 }

@@ -1,7 +1,10 @@
 @import 'partials/variables',
-        'partials/navbar',
-        'partials/about';
-    ;
+'partials/navbar',
+'partials/about',
+'partials/technology',
+'partials/projects',
+'partials/contact',
+'partials/media-queries';
 
 * {
     box-sizing: border-box;
@@ -10,4 +13,9 @@
 body {
     background-color: $color-background;
     font-family: 'Lato', sans-serif;
+}
+
+.admission {
+    margin: $main-margin;
+    font-size: $font-heading;
 }

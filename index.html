@@ -11,201 +11,194 @@
 
 <body>
     <!--Navbar Section-->
-    
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light border-bottom">
-    <a class="navbar-brand" href="#">Junior Front-End Developer</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light border-bottom p-4">
+        <a class="logo-name">Mateusz Machnik</a>
+        <a class="navbar-brand" href="#">Junior Front-End Developer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#about">O Mnie<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#technology">Technologie</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#projects">Projekty</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Kontakt</a>
-            </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">O Mnie<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#technology">Technologie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projekty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!---------------------------------------->
+    <div class="container">
+        <!--START CONTAINER-->
+        <!--ABOUT-->
+        <section id="about">
+            <div class="row text-center">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 offset-lg-2 img--block">
+                    <img src="img/photo1.png">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 offset-lg-0">
+                    <br>
+                    <h5>Cześć, Jestem<br></h5><br>
+                    <h1><strong>Mateusz Machnik</strong></h1><br>
+                    <p class="lead">Junior Front-End Developer</p><br>
+                </div>
+                <div class="row text-center">
+                    <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1">
+                        <p class="text-biography">Od tak naprawde małego dziecka interesuje się informatyką, zagadnieniami technologicznymi, zaś programowanie towarzyszy mi od pewnego czasu. Jestem osobą sumienną, pracowitą, posiadającą determinacje w dążeniu do obranego celu. W moich projektach staram się pisać czytelny kod. Programowanie uczy mnie cierpliwości, dokładności, jak i logicznego myślenia.
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1">
+                        <p class="text-biography">
+                            Moge z ręką na sercu powiedzieć że programowanie stało się moją pasją. Niestety życie ukierunkowało mnie na calkiem inną branze, i w tym momencie robie coś co tak naprawde nie sprawia mi przyjemnośći.Chce zacząć pracę, która naprawde sprawia mi satysfakcje, gdzie napotkane problemy stają się wyzwaniem, a ich rozwiązanie wywołuje radość. Głownie piszę językiem JavaScript. Na dzień dzisiejszy biorę lekcje jezyka angielskiego biznesowego. W przyszłości chciałbym zostać Full-Stack Developerem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------------------------------->
+        <!--SKILLS-->
+        <section id="technology">
+            <h1 class="display-4 text-center admission">Technologie</h1>
+            <div class="row text-center">
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <img src="img/html5.png" width="100" heigth="100">
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <img src="img/css3.png" width="100" heigth="100">
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <img src="img/js.png" width="100" heigth="100">
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <img src="img/rwd.png" width="100" heigth="100">
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <img src="img/Bootstrap.png" width="100" heigth="100">
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <img src="img/sass.png" width="100" heigth="100">
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <img src="img/jquery.png" width="100" heigth="100">
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <img src="img/git.png" width="100" heigth="100">
+                </div>
+            </div>
+        </section>
+        <!---------------------------------------->
+        <!--PROJECTS-->
+        <section id="projects">
+            <h1 class="display-4 text-center admission">Projekty</h1>
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/project-dice.png" alt="DiceGame" width="286" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Projekt Dice</h5>
+                            <p class="card-text">Postawowe budowanie aplikacji z użyciem Vanilla JS</p>
+                            <a href="https://vuzeta95.github.io/Dice-Ver.2-with-Treehouse-/" class="btn btn-danger" target="_blank">Live</a>
+                            <a href="https://github.com/Vuzeta95/Dice-Ver.2-with-Treehouse-" class="btn btn-danger" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/project-playlist.png" alt="PlayList" width="286" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Projekt PlayList</h5>
+                            <p class="card-text">Budowanie obiektowe aplikacji językiem JavaScript</p>
+                            <a href="https://vuzeta95.github.io/Project-PlayList/" class="btn btn-danger" target="_blank">Live</a>
+                            <a href="https://github.com/Vuzeta95/Project-PlayList" class="btn btn-danger" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/project-ship.png" alt="War of Ship game" width="286" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Projekt WarOfShip</h5>
+                            <p class="card-text">Nauka języka JavaScript z podręcznika HeadFirst</p>
+                            <a href="https://vuzeta95.github.io/WarOfShip/" class="btn btn-danger" target="_blank">Live</a>
+                            <a href="https://github.com/Vuzeta95/WarOfShip" class="btn btn-danger" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/project-bootstrap.png" alt="Learn bootstrap" width="286" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Nauka Bootstrap4</h5>
+                            <p class="card-text">Budowanie layoutu z użyciem narzędzia Bootstrap</p>
+                            <a href="https://vuzeta95.github.io/Learning-Bootstrap4/" class="btn btn-danger" target="_blank">Live</a>
+                            <a href="https://github.com/Vuzeta95/Learning-Bootstrap4" class="btn btn-danger" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/project-random-colors.png" alt="RandomColors" width="286" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Projekt RandomColors</h5>
+                            <p class="card-text">Manipulacja elementami DOM, losowe wybranie 10 kolorów - Vanilla JS </p>
+                            <a href="https://vuzeta95.github.io/10-Random-Colors/" class="btn btn-danger" target="_blank">Live</a>
+                            <a href="https://github.com/Vuzeta95/10-Random-Colors" class="btn btn-danger" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/project-invite.png" alt="Invite to the party" width="286" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Projekt Invite</h5>
+                            <p class="card-text">Projekt manipulujący prostym layout'em. Nauka czystego JavaScript </p>
+                            <a href="https://vuzeta95.github.io/App-Invite-Party/" class="btn btn-danger" target="_blank">Live</a>
+                            <a href="https://github.com/Vuzeta95/App-Invite-Party" class="btn btn-danger" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------------------------------->
+        <!--CONTACT-->
+        <section id="contact">
+            <h1 class="display-4 text-center admission">Kontakt</h1>
+            <div class="row text-center">
+                <div class="col-12">
+                    <h5>Mateusz Machnik</h5>
+                    <p>&#9993; mateusz.machnik95@gmail.com</p>
+                    <p>&#9742; tel.506-354-088</p>
+                </div>
+                <div class="col-12">
+                    <a href="https://www.facebook.com/mateusz.machnik.1?ref=bookmarks" target="_blank"><img src="img/icon-facebook.png" alt="Facebook" class="lead"></a>
+                    <a href="https://github.com/Vuzeta95/" target="_blank"><img src="img/icon-github.png" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/mateusz-machnik-566468159/" target="_blank"><img src="img/icon-linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </section>
+        <!---------------------------------------->
+        <!--Footer-->
+        <footer>
+            <p>&copy; Mateusz Machnik</p>
+        </footer>
+
+
+
+
     </div>
-</nav>
-<!---------------------------------------->
-<div class="container"> <!--START CONTAINER-->
-    <!--ABOUT-->
-<section id="about">
-    <div class="row text-center">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 offset-lg-2 img--block">
-            <img src="img/photo1.png">
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 offset-lg-0">
-            <br>
-            <h5>Cześć, Jestem<br></h5><br>
-            <h1><strong>Mateusz Machnik</strong></h1><br>
-            <p class="lead">Junior Front-End Developer</p><br>
-        </div>
-        <div class="row text-center">
-        <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1">
-            <p>Od tak naprawde małego dziecka interesuje się informatyką, zagadnieniami technologicznymi,
-                zaś programowanie towarzyszy mi od pewnego czasu.
-                Jestem osobą sumienną, pracowitą, posiadającą determinacje w dążeniu do obranego celu.
-                W moich projektach staram się pisać czytelny kod.
-                Programowanie uczy mnie cierpliwości, dokładności, jak i 
-                logicznego myślenia.
-            </p>
-        </div>
-            <div class="col-xs-12 col-sm-12 col-md-10 offset-md-1">
-            <p> Moge z ręką na sercu powiedzieć że programowanie stało się moją pasją.
-                Niestety życie ukierunkowało mnie na calkiem inną branze, i w tym momencie robie coś co tak
-                naprawde nie sprawia mi przyjemnośći.Chce zacząć pracę, która naprawde sprawia mi satysfakcje,
-                gdzie napotkane problemy stają się wyzwaniem, a ich rozwiązanie wywołuje radość.
-                Głownie piszę językiem JavaScript. 
-                Na dzień dzisiejszy biorę lekcje jezyka angielskiego biznesowego.
-                W przyszłości chciałbym zostać Full-Stack Developerem.
-            </p>
-        </div>
-        </div>
-    </div>
-</section>
-<!---------------------------------------->
-    <!--SKILLS-->
-<section id="technology">
-    <h1 class="display-4 text-center">Technologie</h1>
-    <div class="row text-center">
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-            <img src="img/html5.png" width="100" heigth="100">
-        </div>
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-            <img src="img/css3.png" width="100" heigth="100">
-        </div>
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-            <img src="img/js.png" width="100" heigth="100">
-        </div>
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-            <img src="img/rwd.png" width="100" heigth="100">
-        </div>
-    </div>
-    <div class="row text-center">
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-            <img src="img/Bootstrap.png" width="100" heigth="100">
-        </div>
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-            <img src="img/sass.png" width="100" heigth="100">
-        </div>
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-            <img src="img/jquery.png" width="100" heigth="100">
-        </div>
-        <div class="col-lg-3 col-sm-6 col-xs-12">
-            <img src="img/git.png" width="100" heigth="100">
-        </div>
-    </div>
-</section>
-<!----------------------------------------> 
-    <!--PROJECTS-->
-<section id="projects">
-    <h1 class="display-4 text-center">Projekty</h1> 
-    <div class="row text-center">
-        <div class="col-md-6 col-lg-4 ">
-            <div class="card mb-3">
-                <img class="card-img-top" src="img/project-dice.png" alt="DiceGame" width="286" height="250">
-                <div class="card-body">
-                    <h5 class="card-title">Projekt Dice</h5>
-                    <p class="card-text">Postawowe budowanie aplikacji z użyciem Vanilla JS</p>
-                    <a href="https://vuzeta95.github.io/Dice-Ver.2-with-Treehouse-/" class="btn btn-primary" target="_blank">Live</a>
-                    <a href="https://github.com/Vuzeta95/Dice-Ver.2-with-Treehouse-" class="btn btn-primary" target="_blank">Code</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-            <div class="card mb-3">
-                <img class="card-img-top" src="img/project-playlist.png" alt="PlayList" width="286" height="250">
-                <div class="card-body">
-                    <h5 class="card-title">Projekt PlayList</h5>
-                    <p class="card-text">Budowanie obiektowe aplikacji językiem JavaScript</p>
-                    <a href="https://vuzeta95.github.io/Project-PlayList/" class="btn btn-primary" target="_blank">Live</a>
-                    <a href="https://github.com/Vuzeta95/Project-PlayList" class="btn btn-primary" target="_blank">Code</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-            <div class="card mb-3">
-                <img class="card-img-top" src="img/project-ship.png" alt="War of Ship game" width="286" height="250">
-                <div class="card-body">
-                    <h5 class="card-title">Projekt WarOfShip</h5>
-                    <p class="card-text">Nauka języka JavaScript z podręcznika HeadFirst</p>
-                    <a href="https://vuzeta95.github.io/WarOfShip/" class="btn btn-primary" target="_blank">Live</a>
-                    <a href="https://github.com/Vuzeta95/WarOfShip" class="btn btn-primary" target="_blank">Code</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-            <div class="card mb-3">
-                <img class="card-img-top" src="img/project-bootstrap.png" alt="Learn bootstrap" width="286" height="250">
-                <div class="card-body">
-                    <h5 class="card-title">Nauka Bootstrap4</h5>
-                    <p class="card-text">Budowanie layoutu z użyciem narzędzia Bootstrap</p>
-                    <a href="https://vuzeta95.github.io/Learning-Bootstrap4/" class="btn btn-primary" target="_blank">Live</a>
-                    <a href="https://github.com/Vuzeta95/Learning-Bootstrap4" class="btn btn-primary" target="_blank">Code</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-            <div class="card mb-3">
-                <img class="card-img-top" src="img/project-random-colors.png" alt="RandomColors" width="286" height="250">
-                <div class="card-body">
-                    <h5 class="card-title">Projekt RandomColors</h5>
-                    <p class="card-text">Manipulacja elementami DOM, losowe wybranie 10 kolorów - Vanilla JS </p>
-                    <a href="https://vuzeta95.github.io/10-Random-Colors/" class="btn btn-primary" target="_blank">Live</a>
-                    <a href="https://github.com/Vuzeta95/10-Random-Colors" class="btn btn-primary" target="_blank">Code</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-            <div class="card">
-                <img class="card-img-top" src="img/project-invite.png" alt="Invite to the party" width="286" height="250">
-                <div class="card-body">
-                    <h5 class="card-title">Projekt Invite</h5>
-                    <p class="card-text">Projekt manipulujący prostym layout'em. Nauka czystego JavaScript </p>
-                    <a href="https://vuzeta95.github.io/App-Invite-Party/" class="btn btn-primary" target="_blank">Live</a>
-                    <a href="https://github.com/Vuzeta95/App-Invite-Party" class="btn btn-primary" target="_blank">Code</a>
-                </div>
-            </div>
-        </div>   
-    </div>
-</section>
-<!---------------------------------------->
-    <!--CONTACT-->
-<section id="contact">
-    <h1 class="display-4 text-center">Kontakt</h1>
-        <div class="row text-center">
-            <div class="col-12">
-                <h5>Mateusz Machnik</h5>
-                <p>&#9993; mateusz.machnik95@gmail.com</p>
-                <p>&#9742; tel.506-354-088</p>
-            </div>
-            <div class="col-12">
-                <a href="https://www.facebook.com/mateusz.machnik.1?ref=bookmarks" target="_blank"><img src="img/icon-facebook.png" alt="Facebook" class="lead"></a>
-                <a href="https://github.com/Vuzeta95/" target="_blank"><img src="img/icon-github.png" alt="github"></a>
-                <a href="https://www.linkedin.com/in/mateusz-machnik-566468159/" target="_blank"><img src="img/icon-linkedin.png" alt="LinkedIn"></a>
-            </div>
-        </div>
-</section>    
-<!---------------------------------------->  
-    <!--Footer-->
-<footer>
-    <p>&copy; Mateusz Machnik</p>
-</footer>
-    
-    
- 
-    
- </div><!--END CONTAINER-->   
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--END CONTAINER-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,3 +1,19 @@
-$color-background: #D9CB9E;
-$color-navbar: #DC3522;
-$color-fonts: #2A2C2B;
+//COLORS
+$color-background: #ECF0F1;
+$color-junior: #DC3522;
+$color-fonts: #2C3E50;
+$color-nav: #2980B9;
+
+
+//MARGIN
+$main-margin: 20px auto;
+
+//FONT-SIZE
+$font-heading: 40px;
+$font-heading-5: 20px;
+
+
+//BORDER RADIUS
+@mixin shadow-box {
+    box-shadow: 0 8px 6px -6px black;
+}

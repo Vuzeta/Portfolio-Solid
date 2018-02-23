@@ -1,6 +1,11 @@
 .navbar {
-    background-color: $color-navbar;
     a {
         color: $color-fonts;
+        font-size: $font-heading-5;
+    }
+
+    .logo-name {
+        margin: auto 2em;
+        font-weight: bold;
     }
 }
