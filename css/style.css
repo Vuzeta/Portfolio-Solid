@@ -1,6 +1,6 @@
-.navbar {
+#navigation .navbar {
   background-color: #ECF0F1; }
-  .navbar a {
+  #navigation .navbar a {
     font-size: 20px;
     font-weight: 400;
     text-shadow: -1px 1px 4px #969696; }
@@ -24,6 +24,15 @@
     margin: 0; }
   #about .text-biography {
     margin: 10px; }
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  49% {
+    opacity: 0; }
+  50% {
+    opacity: 1; } }
+  #about blink {
+    animation: blink 1.5s infinite; }
 
 #technology img {
   margin: 10px; }
@@ -83,6 +92,10 @@
   #about .text-biography {
     margin: 20px auto; } }
 @media only screen and (min-width: 1224px) {
+  #navigation .nav-link:hover {
+    background-color: #30DB60;
+    border-radius: 38px; }
+
   #about h1,
   #about h5,
   #about .lead {
