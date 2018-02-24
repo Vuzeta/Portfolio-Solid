@@ -4,7 +4,8 @@
 'partials/technology',
 'partials/projects',
 'partials/contact',
-'partials/media-queries';
+'partials/media-queries/media-queries-tablet',
+'partials/media-queries/media-queries-laptop';
 
 * {
     box-sizing: border-box;
@@ -19,4 +20,5 @@ body {
     margin: $main-margin;
     font-size: $font-heading;
     font-weight: bold;
+    text-shadow: 0px -2px 4px rgba(150, 150, 150, 1);
 }

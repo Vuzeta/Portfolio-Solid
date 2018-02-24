@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 
 <body>
     <!--Navbar Section-->
-
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light border-bottom p-4">
-        <a class="logo-name">Mateusz Machnik</a>
-        <a class="navbar-brand" href="#">Junior Front-End Developer</a>
-        <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <section id="navigation">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light border-bottom p-4 wow slideInDown">
+            <a class="navbar-brand" href="#">Junior Front-End Developer</a>
+            <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">O Mnie<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#technology">Technologie</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projekty</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Kontakt</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link animated pulse" href="#about">O Mnie<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animated pulse" href="#technology">Technologie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animated pulse" href="#projects">Projekty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animated pulse" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
     <!---------------------------------------->
+    <!--START CONTAINER-->
     <div class="container">
-        <!--START CONTAINER-->
-        <!--ABOUT-->
+        <!--Section About-->
         <section id="about">
             <div class="row text-center">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 offset-lg-2 img--block">
@@ -65,7 +67,7 @@
         </section>
         <hr>
         <!---------------------------------------->
-        <!--SKILLS-->
+        <!--Section Technology-->
         <section id="technology">
             <h1 class="display-4 text-center admission">Technologie</h1>
             <div class="row text-center">
@@ -99,7 +101,7 @@
         </section>
         <hr>
         <!---------------------------------------->
-        <!--PROJECTS-->
+        <!--Section Projects-->
         <section id="projects">
             <h1 class="display-4 text-center admission">Projekty</h1>
             <div class="row text-center">
@@ -173,7 +175,7 @@
         </section>
         <hr>
         <!---------------------------------------->
-        <!--CONTACT-->
+        <!--Section Contact-->
         <section id="contact">
             <h1 class="display-4 text-center admission">Kontakt</h1>
             <div class="row text-center">
@@ -183,21 +185,28 @@
                     <p>&#9742; tel.506-354-088</p>
                 </div>
                 <div class="col-12">
-                    <a href="https://www.facebook.com/mateusz.machnik.1?ref=bookmarks" target="_blank"><img src="img/icon-facebook.png" alt="Facebook" class="lead"></a>
-                    <a href="https://github.com/Vuzeta95/" target="_blank"><img src="img/icon-github.png" alt="github"></a>
-                    <a href="https://www.linkedin.com/in/mateusz-machnik-566468159/" target="_blank"><img src="img/icon-linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.facebook.com/mateusz.machnik.1?ref=bookmarks" target="_blank"><img src="img/icon-facebook.png" alt="Facebook" class="animated pulse"></a>
+                    <a href="https://github.com/Vuzeta95/" target="_blank"><img src="img/icon-github.png" alt="github" class="animated pulse"></a>
+                    <a href="https://www.linkedin.com/in/mateusz-machnik-566468159/" target="_blank"><img src="img/icon-linkedin.png" alt="LinkedIn" class="animated pulse"></a>
                 </div>
             </div>
         </section>
         <!---------------------------------------->
-        <!--Footer-->
-        <footer>
-            <p>&copy; Mateusz Machnik</p>
-        </footer>
+        <!--End Container-->
     </div>
-    <!--END CONTAINER-->
+    <!--Section Footer-->
+    <footer>
+        <p class="text-center">&copy; Mateusz Machnik 2018</p>
+    </footer>
+    <!---------------------------------------->
+    <!--Section Scripts-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
+
 </html>
