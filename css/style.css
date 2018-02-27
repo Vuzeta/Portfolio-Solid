@@ -1,9 +1,10 @@
 #navigation .navbar {
-  background-color: #ECF0F1; }
+  opacity: 0.9; }
   #navigation .navbar a {
     font-size: 20px;
-    font-weight: 400;
-    text-shadow: -1px 1px 4px #969696; }
+    font-weight: 400; }
+  #navigation .navbar a:hover {
+    color: #28A745 !important; }
 
 #about {
   margin-top: 150px;
@@ -14,14 +15,8 @@
     font-size: 25px;
     font-weight: 400; }
   #about h1 {
-    text-shadow: 1px 0px 1px #ccc, 0px 1px 1px #eee, 2px 1px 1px #ccc, 1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee, 4px 3px 1px #ccc, 3px 4px 1px #eee, 5px 4px 1px #ccc, 4px 5px 1px #eee, 6px 5px 1px #ccc, 5px 6px 1px #eee, 7px 6px 1px #ccc;
     font-size: 35px;
     font-weight: bold; }
-  #about .lead {
-    font-weight: 400;
-    font-style: italic;
-    color: #30DB60;
-    margin: 0; }
   #about .text-biography {
     margin: 10px; }
 @keyframes blink {
@@ -34,18 +29,21 @@
   #about blink {
     animation: blink 1.5s infinite; }
 
-#technology img {
-  margin: 10px; }
+#technology {
+  padding: 100px auto;
+  background-color: #F2F2F2; }
+  #technology img {
+    margin: 10px; }
 
 #projects .card {
-  margin: 20px auto;
-  box-shadow: 0 8px 6px -6px black; }
+  margin: 20px auto; }
 #projects h5 {
   font-size: 20px;
   font-weight: bold; }
 
 #contact {
-  margin-bottom: 50px; }
+  padding-bottom: 50px;
+  background-color: #F2F2F2; }
   #contact h5 {
     font-size: 20px;
     font-weight: bold; }
@@ -69,7 +67,7 @@
     font-size: 20px; }
 
   #technology img {
-    margin: 20px auto; }
+    margin: 50px auto; }
 
   #projects h5 {
     font-size: 25px; }
@@ -92,10 +90,6 @@
   #about .text-biography {
     margin: 20px auto; } }
 @media only screen and (min-width: 1224px) {
-  #navigation .nav-link:hover {
-    background-color: #30DB60;
-    border-radius: 38px; }
-
   #about h1,
   #about h5,
   #about .lead {
@@ -103,7 +97,10 @@
   #about h5 {
     margin-top: 50px; }
   #about .text-biography {
-    margin: 20px auto; } }
+    margin: 20px auto; }
+
+  #technology img {
+    margin: 50px auto; } }
 * {
   box-sizing: border-box; }
 
@@ -114,7 +111,9 @@ body {
 .admission {
   margin: 20px auto;
   font-size: 40px;
-  font-weight: bold;
-  text-shadow: 0px -2px 4px #969696; }
+  font-weight: bold; }
+
+footer {
+  background-color: #F2F2F2; }
 
 /*# sourceMappingURL=style.css.map */

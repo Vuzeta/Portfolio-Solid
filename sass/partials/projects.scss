@@ -1,7 +1,6 @@
 #projects {
     .card {
         margin: $main-margin;
-        @include shadow-box;
     }
     h5 {
         font-size: $font-heading-5;

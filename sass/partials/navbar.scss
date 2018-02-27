@@ -1,10 +1,12 @@
 #navigation {
     .navbar {
-        background-color: $color-ghost;
+        opacity: 0.9;
         a {
             font-size: $font-heading-5;
             font-weight: 400;
-            text-shadow: -1px 1px 4px rgba(150, 150, 150, 1);
+        }
+        a:hover {
+            color: $color-green !important;
         }
     }
 }
