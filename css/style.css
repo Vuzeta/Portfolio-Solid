@@ -62,6 +62,10 @@
     border-radius: 6px; }
 
 @media only screen and (min-width: 1224px) {
+  #navigation .first--block a:hover {
+    text-decoration: underline;
+    text-decoration-color: #ef6c00; }
+
   #about h5, #about h1, #about .lead {
     text-align: left; }
   #about h1 {
