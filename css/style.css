@@ -1,119 +1,23 @@
-#navigation .navbar {
-  opacity: 0.9; }
-  #navigation .navbar a {
-    font-size: 20px;
-    font-weight: 400; }
-#navigation .nav-item a:hover {
-  color: #28A745 !important; }
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - scss/style.scss
 
-#about {
-  margin-top: 150px;
-  text-align: center; }
-  #about img {
-    border-radius: 50%; }
-  #about h5 {
-    font-size: 25px;
-    font-weight: 400; }
-  #about h1 {
-    font-size: 35px;
-    font-weight: bold; }
-  #about .text-biography {
-    margin: 10px; }
-@keyframes blink {
-  0% {
-    opacity: 0; }
-  49% {
-    opacity: 0; }
-  50% {
-    opacity: 1; } }
-  #about blink {
-    animation: blink 1.5s infinite; }
-
-#technology {
-  padding: 100px auto;
-  background-color: #F2F2F2; }
-  #technology img {
-    margin: 10px; }
-
-#projects .card {
-  margin: 20px auto; }
-#projects h5 {
-  font-size: 20px;
-  font-weight: bold; }
-
-#contact {
-  padding-bottom: 50px;
-  background-color: #F2F2F2; }
-  #contact h5 {
-    font-size: 20px;
-    font-weight: bold; }
-  #contact p {
-    font-size: 18px; }
-  #contact img {
-    margin: auto 5px; }
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  #about h1,
-  #about h5,
-  #about .lead {
-    margin-bottom: -20px;
-    font-size: 25px; }
-  #about h1 {
-    font-size: 40px; }
-  #about .lead {
-    margin-bottom: 10px;
-    font-size: 25px; }
-  #about p {
-    font-size: 20px; }
-
-  #technology img {
-    margin: 50px auto; }
-
-  #projects h5 {
-    font-size: 25px; }
-  #projects p {
-    font-size: 20px; }
-  #projects a {
-    font-size: 20px; }
-
-  #contact h5 {
-    font-size: 25px; }
-  #contact p {
-    font-size: 20px; } }
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  #about h1,
-  #about h5,
-  #about .lead {
-    float: left; }
-  #about h5 {
-    margin-top: 50px; }
-  #about .text-biography {
-    margin: 20px auto; } }
-@media only screen and (min-width: 1224px) {
-  #about h1,
-  #about h5,
-  #about .lead {
-    float: left; }
-  #about h5 {
-    margin-top: 50px; }
-  #about .text-biography {
-    margin: 20px auto; }
-
-  #technology img {
-    margin: 50px auto; } }
-* {
-  box-sizing: border-box; }
-
-body {
-  background-color: #fff;
-  font-family: 'Lato', sans-serif; }
-
-.admission {
-  margin: 20px auto;
-  font-size: 40px;
-  font-weight: bold; }
-
-footer {
-  background-color: #F2F2F2; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:454:in `read'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:294:in `watch'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin.rb:109:in `method_missing'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/bin/sass:13:in `<top (required)>'
+C:/Ruby24-x64/bin/sass:23:in `load'
+C:/Ruby24-x64/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - scss/style.scss"; }
