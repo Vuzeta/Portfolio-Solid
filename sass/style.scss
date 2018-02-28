@@ -1,0 +1,30 @@
+@import 'partials/variables',
+'partials/navbar',
+'partials/about',
+'partials/technology',
+'partials/projects',
+'partials/contact',
+'partials/media-queries/media-queries-tablet',
+'partials/media-queries/media-queries-laptop';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: $color-white;
+}
+
+.admission {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: $font-lg-size;
+}
+
+hr {
+    max-width: 20%;
+    margin: 2em auto;
+    border: 1px solid $color-orange;
+    border-radius: 2px;
+}
