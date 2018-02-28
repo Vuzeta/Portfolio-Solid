@@ -1,14 +1,25 @@
 #navigation {
+    
     .navbar {
-        opacity: 0.9;
-        a {
-            font-size: $font-heading-5;
-            font-weight: 400;
-        }
+            background-color: $color-grey;
     }
-    .nav-item {
-        a:hover {
-            color: $color-green !important;
-        }
+    
+    .navbar-brand{
+        color: $color-orange;
+        font-weight: bold;
     }
+    
+    .nav-link {
+        color: $color-white;
+        float: right;
+        font-weight: normal;
     }
+    
+    i {
+        color: $color-orange;
+    }
+    
+    .nav-flex-icons {
+        float: right;
+    }
+}
