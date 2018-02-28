@@ -5,8 +5,10 @@
             font-size: $font-heading-5;
             font-weight: 400;
         }
+    }
+    .nav-item {
         a:hover {
             color: $color-green !important;
         }
     }
-}
+    }

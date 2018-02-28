@@ -3,8 +3,8 @@
   #navigation .navbar a {
     font-size: 20px;
     font-weight: 400; }
-  #navigation .navbar a:hover {
-    color: #28A745 !important; }
+#navigation .nav-item a:hover {
+  color: #28A745 !important; }
 
 #about {
   margin-top: 150px;
