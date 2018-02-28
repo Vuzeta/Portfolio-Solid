@@ -12,11 +12,63 @@
 #navigation .nav-flex-icons {
   float: right; }
 
+#about {
+  margin: 100px auto auto auto;
+  font-weight: bold; }
+  #about h5,
+  #about .lead {
+    color: #424242;
+    font-size: 25px;
+    font-weight: bold; }
+  #about h1 {
+    color: #ef6c00;
+    font-weight: bold;
+    font-size: 34px; }
+  #about .text-biography {
+    color: #A1A194; }
+  #about blink {
+    color: #ef6c00; }
+
+#technology img {
+  margin: 15px auto; }
+
+#projects .live {
+  color: #ef6c00;
+  font-weight: bold;
+  font-size: 15px; }
+#projects .card-title {
+  font-weight: bold; }
+#projects .card-body {
+  text-align: center; }
+
+#contact {
+  margin-bottom: 50px; }
+  #contact h4,
+  #contact p {
+    font-weight: bold;
+    margin: 20px auto; }
+  #contact a {
+    margin: auto 10px; }
+  #contact img:hover {
+    background-color: #ef6c00;
+    border-radius: 6px; }
+
 * {
   box-sizing: border-box; }
 
 body {
   font-family: 'Lato', sans-serif;
   background-color: #FFFFFA; }
+
+.admission {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 34px; }
+
+hr {
+  max-width: 50%;
+  margin: 1.35em auto;
+  border: 1px solid #ef6c00;
+  border-radius: 2px; }
 
 /*# sourceMappingURL=style.css.map */
