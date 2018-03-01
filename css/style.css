@@ -39,11 +39,16 @@
 
 #technology img {
   margin: 15px auto; }
+#technology i {
+  margin-left: 50%;
+  paddin-bottom: 30px; }
 
 #projects .live {
   color: #ef6c00;
   font-weight: bold;
   font-size: 15px; }
+#projects .card {
+  color: #000000; }
 #projects .card-title {
   font-weight: bold; }
 #projects .card-body {
