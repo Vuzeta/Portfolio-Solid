@@ -4,7 +4,6 @@
 'partials/technology',
 'partials/projects',
 'partials/contact',
-'partials/media-queries/media-queries-tablet',
 'partials/media-queries/media-queries-laptop';
 
 * {
@@ -20,7 +19,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     font-size: $font-lg-size;
-    margin : 30px auto;
+    margin: 30px auto;
 }
 
 hr {
@@ -28,4 +27,5 @@ hr {
     margin: 2em auto;
     border: 1px solid $color-orange;
     border-radius: 2px;
+    background-color: $color-orange;
 }
