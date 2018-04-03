@@ -1,0 +1,36 @@
+{
+  "name": "portfolio-solid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vuzeta95/Portfolio-Solid.git"
+  },
+  "keywords": [
+    "portfolio",
+    "+",
+    "gulp"
+  ],
+  "author": "Mateusz Machnik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vuzeta95/Portfolio-Solid/issues"
+  },
+  "homepage": "https://github.com/Vuzeta95/Portfolio-Solid#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.2.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {}
+}

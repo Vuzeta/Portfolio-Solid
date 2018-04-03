@@ -1,14 +1,18 @@
 #navigation .navbar {
   background-color: #424242; }
+
 #navigation .navbar-brand {
   color: #ef6c00;
   font-weight: bold; }
+
 #navigation .nav-link {
   color: #FFFFFA;
   float: right;
   font-weight: normal; }
+
 #navigation i {
   color: #ef6c00; }
+
 #navigation .nav-flex-icons {
   float: right; }
 
@@ -26,6 +30,7 @@
     font-size: 34px; }
   #about .text-biography {
     color: #A1A194; }
+
 @keyframes blink {
   0% {
     opacity: 0; }
@@ -44,10 +49,13 @@
   color: #ef6c00;
   font-weight: bold;
   font-size: 15px; }
+
 #projects .card {
   color: #000000; }
+
 #projects .card-title {
   font-weight: bold; }
+
 #projects .card-body {
   text-align: center; }
 
@@ -67,7 +75,6 @@
   #navigation .first--block a:hover {
     text-decoration: underline;
     text-decoration-color: #ef6c00; }
-
   #about h5,
   #about h1,
   #about .lead {
@@ -76,9 +83,9 @@
     font-size: 40px; }
   #about .row {
     margin: 20px auto; }
-
   #technology img {
     margin: 40px auto; } }
+
 * {
   box-sizing: border-box; }
 
