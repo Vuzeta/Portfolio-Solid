@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
+    cleanCSS = require('gulp-clean-css'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     maps = require('gulp-sourcemaps'),
@@ -19,6 +20,13 @@ gulp.task('minifyScripts', function() {
         .pipe(uglify())
         .pipe(rename('app.min.js'))
         .pipe(gulp.dest('js'))
+});
+
+gulp.task('minCSS', function() {
+    gulp.src('css/style.css', 'css/animate.css')
+        .pipe(cleanCSS())
+        .pipe(rename('style.min.css'))
+        .pipe(gulp.dest('cssmin'))
 });
 
 gulp.task('minifyHTML', function () {
