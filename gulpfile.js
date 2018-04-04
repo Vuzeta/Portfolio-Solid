@@ -23,10 +23,10 @@ gulp.task('minifyScripts', function() {
 });
 
 gulp.task('minCSS', function() {
-    gulp.src('css/style.css', 'css/animate.css')
+    gulp.src('css/style.css')
         .pipe(cleanCSS())
         .pipe(rename('style.min.css'))
-        .pipe(gulp.dest('cssmin'))
+        .pipe(gulp.dest('css'))
 });
 
 gulp.task('minifyHTML', function () {
@@ -55,7 +55,7 @@ gulp.task('minifyImage', () =>
         .pipe(gulp.dest('img'))
 );
 
-gulp.task('watchFiles', function() {
+gulp.task('watchSass', function() {
     gulp.watch('sass/**/*.scss', ['compileSass']);
 });
 
@@ -63,8 +63,8 @@ gulp.task('clean', function() {
     del(['dist', 'css/style.css*', 'js/app*.js*']);
 });
 
-gulp.task('build', ['concatScripts','minifyScripts','compileSass', 'minifyImage', 'minifyHTML'], function() {
-    return gulp.src(["css/*.css", "js/app.min.js", "img/**"], { base: './'})
+gulp.task('build', ['concatScripts','minifyScripts','compileSass', 'minifyImage', 'minifyHTML', 'minCSS'], function() {
+    return gulp.src(["css/animate.css", "css/style.min.css", "js/app.min.js", "img/**"], { base: './'})
         .pipe(gulp.dest('dist'))}); //Use task 3 times
 
 gulp.task('default', ['clean']); // clean all your tasks
