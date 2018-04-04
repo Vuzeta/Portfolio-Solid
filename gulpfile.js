@@ -64,7 +64,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('build', ['concatScripts','minifyScripts','compileSass', 'minifyImage', 'minifyHTML', 'minCSS'], function() {
-    return gulp.src(["css/animate.css", "css/style.min.css", "js/app.min.js", "img/**"], { base: './'})
+    return gulp.src(["css/*.min.css", "js/app.min.js", "img/**"], { base: './'})
         .pipe(gulp.dest('dist'))}); //Use task 3 times
 
 gulp.task('default', ['clean']); // clean all your tasks
