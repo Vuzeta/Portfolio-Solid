@@ -6,7 +6,7 @@
   font-weight: bold; }
 
 #navigation .nav-link {
-  color: #FFFFFA;
+  color: #fffffa;
   float: right;
   font-weight: normal; }
 
@@ -29,7 +29,7 @@
     font-weight: bold;
     font-size: 34px; }
   #about .text-biography {
-    color: #A1A194; }
+    color: #a1a194; }
 
 @keyframes blink {
   0% {
@@ -91,7 +91,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #FFFFFA; }
+  background-color: #fffffa; }
 
 .admission {
   font-family: 'Oswald', sans-serif;
