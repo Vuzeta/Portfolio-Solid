@@ -1,0 +1,16 @@
+#projects {
+    .live {
+        color: $color-orange;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .card {
+        color: $color-black;
+    }
+    .card-title {
+        font-weight: bold;
+    }
+    .card-body {
+        text-align: center;
+    }
+}
