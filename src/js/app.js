@@ -1,3 +1,27 @@
+const progressBar = document.querySelectorAll('.progress-bar')
+progressBar.forEach(bar => {
+    let barValue = bar.getAttribute('aria-valuenow')
+    switch(barValue) {
+        case '20':
+            bar.setAttribute("style", `width: ${barValue}%; background-color: #ef5350`);
+            break;
+        case '40':
+            bar.setAttribute("style", `width: ${barValue}%; background-color: #ef6c00`);
+            break;
+        case '48':
+            bar.setAttribute("style", `width: ${barValue}%; background-color: #40c4ff`);
+            break;
+        case '64':
+            bar.setAttribute("style", `width: ${barValue}%; background-color: #7cb342`);
+            break;
+        case '100':
+            bar.setAttribute("style", `width: ${barValue}%; background-color: #1b5e20`);
+            break;
+        default:
+            bar.setAttribute("style", `width: ${barValue}%; background-color: #ef6c00`);  
+    }
+})
+
 $('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         var target = $(this.hash);
