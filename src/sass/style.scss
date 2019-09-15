@@ -24,3 +24,11 @@ hr {
   border-radius: 2px;
   background-color: $color-orange;
 }
+
+.card-body {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+  max-width: 500px;
+}

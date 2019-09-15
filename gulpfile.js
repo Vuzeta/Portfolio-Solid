@@ -63,8 +63,8 @@ function minifyHTML() {
     .pipe(dest(config.dist.base));
 }
 
-function animateCss() {
-  return src('./src/css/animate.min.css').pipe(dest('dist/css'));
+function copyLibrary() {
+  return src('./src/css/*.min.css').pipe(dest('dist/css'));
 }
 
 function minifyImage() {
@@ -82,5 +82,5 @@ function clean() {
 }
 
 exports.clean = series(clean);
-exports.build = series(minifyScripts, compileSass, minifyImage, minifyHTML, minCSS, animateCss);
+exports.build = series(minifyScripts, compileSass, minifyImage, minifyHTML, minCSS, copyLibrary);
 exports.watch = series(watchSass);
