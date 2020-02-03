@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "Portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vuzeta/portfolio.git"
+    "url": "git+https://github.com/Vuzeta/Portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Vuzeta/portfolio/issues"
+    "url": "https://github.com/Vuzeta/Portfolio/issues"
   },
-  "homepage": "https://vuzeta.github.io/portfolio",
+  "homepage": "https://vuzeta.github.io/Portfolio",
   "devDependencies": {
     "@babel/core": "^7.8.0",
     "@babel/plugin-proposal-class-properties": "^7.8.0",
