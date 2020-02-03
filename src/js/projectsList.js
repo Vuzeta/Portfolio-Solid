@@ -127,7 +127,7 @@ const initProjects = () => {
 		tech: 'HTML5, CSS3, JavaScript',
 		img: 'eudora_image.jpg',
 		desc:
-			'Projekt Ceoluso-Website został zaczerpnięty z darmowego szablonu na symu.co. Projekt Eudora miał na celu utrwalenie wiadomości przekazanych mi w kursach na udemy.com Cięcie szablonów, rozmieszczenie elementów oraz wprowadzenie ich na strone internetową.',
+			'Projekt Eudora został zaczerpnięty z darmowego szablonu na symu.co. Projekt Eudora miał na celu utrwalenie wiadomości przekazanych mi w kursach na udemy.com Cięcie szablonów, rozmieszczenie elementów oraz wprowadzenie ich na strone internetową.',
 		linkToLive: 'https://vuzeta.github.io/Eudora_psd_to_html',
 		linkToCode: 'https://github.com/Vuzeta/Eudora_psd_to_html',
 		rootElement: document.querySelector('.projects__wrapper'),
