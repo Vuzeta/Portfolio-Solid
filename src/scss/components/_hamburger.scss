@@ -1,0 +1,47 @@
+$buttonWidth: 30px;
+$buttonHeight: 26px;
+$lineThickness: 4px;
+$transitionSpeed: 0.25s;
+$transitionEasing: ease-in-out;
+
+.hamburger {
+	width: $buttonWidth;
+	height: $buttonHeight;
+	position: relative;
+	display: block;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	background: transparent;
+	border-top: $lineThickness solid;
+	border-bottom: $lineThickness solid;
+	color: $color-light-black;
+	font-size: 0;
+	transition: all $transitionSpeed $transitionEasing;
+
+	&:before,
+	&:after {
+		content: '';
+		width: 100%;
+		height: $lineThickness;
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		background: currentColor;
+		transform: translate(-50%, -50%);
+		transition: transform $transitionSpeed $transitionEasing;
+	}
+
+	&.is-active {
+		border-color: transparent;
+
+		&:before {
+			transform: translate(-50%, -50%) rotate(45deg);
+		}
+
+		&:after {
+			transform: translate(-50%, -50%) rotate(-45deg);
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.technologies {
+	max-width: 1024px;
+	margin: $margin-between-sections;
+
+	@include mq(large-laptop) {
+		max-width: 1280px;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+
+		@include mq(medium) {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+	}
+}

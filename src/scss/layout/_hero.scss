@@ -1,0 +1,55 @@
+.hero {
+	margin: $margin-between-sections;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__photo {
+		height: 180px;
+		min-width: 180px;
+		background: url('#{$relative-path}myPhoto.jpg') center center/ cover no-repeat;
+		border: 2px solid rgba(3, 169, 244, 0.9);
+		border-radius: 200px;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+		transform: scale(0);
+		transition: 0.6s;
+
+		@include mq(desktop) {
+			height: 210px;
+			min-width: 210px;
+		}
+	}
+
+	&__header {
+		margin-top: 32px;
+		text-align: center;
+		font-weight: 300;
+		transform: scale(0);
+		transition: 1.2s;
+	}
+
+	&__name {
+		font-size: $font-size-Xlarge;
+
+		@include mq(desktop) {
+			font-size: $font-size-Xlarge + 1rem;
+		}
+	}
+
+	&__subtitle {
+		font-size: $font-size-medium-large;
+
+		@include mq(desktop) {
+			font-size: $font-size-medium-large + 0.3rem;
+		}
+	}
+
+	&__name,
+	&__subtitle {
+		margin: 8px 0;
+		font-weight: $font-weight-small;
+	}
+
+	&__prof {
+		color: $color-blue;
+	}
+}

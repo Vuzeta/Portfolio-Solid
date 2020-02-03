@@ -1,0 +1,36 @@
+.technology {
+	margin-bottom: 30px;
+
+	@include mq(medium) {
+		width: 50%;
+	}
+
+	@include mq(xlarge) {
+		width: 33.33333%;
+	}
+
+	&__logo {
+		width: 97px;
+		height: 97px;
+		margin: 20px auto;
+		background-image: url('#{$relative-path}html_icon.svg');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+	}
+
+	&__description {
+		width: 80%;
+		margin: 0 auto;
+		font-size: $font-size-small;
+		text-align: center;
+
+		@include mq(desktop) {
+			font-size: $font-size-small + 0.1rem;
+		}
+	}
+
+	&__title {
+		font-weight: $font-weight-medium;
+	}
+}

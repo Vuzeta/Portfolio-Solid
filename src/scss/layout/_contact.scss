@@ -1,0 +1,56 @@
+.contact {
+	max-width: 1024px;
+	margin: $margin-between-sections;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		color: $color-light-black;
+
+		@include mq(medium) {
+			flex-direction: row;
+			justify-content: space-around;
+		}
+	}
+
+	&__header {
+		font-weight: $font-weight-regular;
+		font-size: $font-size-medium-large;
+		margin-left: 22px;
+	}
+
+	&__city,
+	&__phone,
+	&__mail,
+	&__github,
+	&__linkedin {
+		display: flex;
+		align-items: center;
+		padding-left: 22px;
+		height: 55px;
+	}
+
+	&__icon {
+		font-size: $font-size-medium-large;
+		margin-right: 12px;
+		width: 21px;
+		text-align: center;
+	}
+
+	&__description,
+	&__link {
+		font-size: $font-size-regular;
+		font-weight: $font-weight-regular;
+	}
+
+	&__link {
+		color: $color-light-black;
+		text-decoration: none;
+		transition: 0.3s;
+
+		@include mq(large) {
+			&:hover {
+				color: $color-blue;
+			}
+		}
+	}
+}

@@ -1,0 +1,151 @@
+.project {
+	margin: 20px 5px;
+	max-width: 1024px;
+	position: relative;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	border: 2px solid rgba(140, 140, 140, 0.3);
+	color: $color-light-black;
+	transition: 1s;
+	background-color: $color-white;
+	z-index: 1;
+	overflow: hidden;
+
+	@include mq(medium) {
+		width: 90%;
+		margin: 20px auto;
+	}
+
+	&__header-wrapper {
+		width: 80%;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__icon-wrapper {
+		width: 20%;
+		text-align: center;
+	}
+
+	&__title {
+		font-size: $font-size-medium-large;
+		font-weight: $font-weight-regular;
+		margin: 0 0 7px;
+
+		@include mq(desktop) {
+			font-size: $font-size-medium-large + 0.1rem;
+		}
+	}
+
+	&__tech {
+		margin: 0;
+		font-weight: $font-weight-regular;
+		font-size: $font-size-small;
+
+		@include mq(desktop) {
+			font-size: $font-size-small + 0.1rem;
+		}
+	}
+
+	&__btn {
+		width: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+		background-color: transparent;
+		border: none;
+		outline: none;
+		cursor: pointer;
+	}
+
+	&__icon {
+		color: $color-blue;
+	}
+
+	&__icon-show {
+		font-size: 21px;
+		width: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transition: 1s;
+	}
+
+	&__content-wrapper {
+		@include mq(medium) {
+			display: flex;
+			justify-content: space-around;
+			margin: 40px 0px 30px 10px;
+		}
+	}
+
+	&__image {
+		width: 100%;
+		height: 200px;
+		margin: 40px 25px;
+		background-image: url('#{$relative-path}project.jpg');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		box-shadow: 8px 8px 11px rgba(0, 0, 0, 0.2);
+
+		@include mq(medium) {
+			width: 45%;
+			margin: 0;
+			height: 250px;
+		}
+	}
+
+	&__description-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		@include mq(medium) {
+			width: 50%;
+		}
+	}
+
+	&__description {
+		width: 100%;
+		margin: 0px 25px 35px;
+		text-align: justify;
+
+		@include mq(medium) {
+			font-size: $font-size-small;
+		}
+
+		@include mq(desktop) {
+			font-size: $font-size-small + 0.1rem;
+		}
+	}
+
+	&__link-icon {
+		margin-bottom: 20px;
+		transition: 0.4s;
+		transform: translateY(0px);
+		cursor: pointer;
+
+		@include mq(xlarge) {
+			&:hover {
+				transform: translateY(-5px);
+			}
+		}
+	}
+
+	&__icon-desktop,
+	&__icon-code {
+		font-size: 3rem;
+		margin: 0px 20px;
+	}
+
+	&__btn--active > &__icon-show {
+		transform: rotateX(180deg);
+	}
+}
