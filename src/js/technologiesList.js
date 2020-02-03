@@ -17,7 +17,7 @@ const initTech = () => {
 		imgTitle: 'css',
 		imgExt: 'svg',
 		description:
-			'Kaskadowe arkusze w stylu poznałem w stopniu, który pozwala na swobodne zbudowanie śrtednio-zaawansowanej strony internetowej. Umiem projektować szablony dzięki Flexbox oraz Grid. Często w projektach używam metodologii BEM.',
+			'Kaskadowe arkusze w stylu poznałem w stopniu, który pozwala na swobodne zbudowanie średnio-zaawansowanej strony internetowej. Umiem projektować szablony dzięki Flexbox oraz Grid. Często w projektach używam metodologii BEM.',
 		rootEl: rootElement,
 	});
 
@@ -76,7 +76,7 @@ const initTech = () => {
 		title: 'Webpack',
 		imgTitle: 'webpack',
 		imgExt: 'svg',
-		description: `Module Bundler bez którego nie wyobrażam sobie pracy z większym projektam. Stosuje go w większości projektów, pozwala mi on przygotować odpowiednio aplikacje do deploymentu.`,
+		description: `Module Bundler bez którego nie wyobrażam sobie pracy. Stosuje go w większości projektów, pozwala mi on przygotować odpowiednio aplikacje do deploymentu.`,
 		rootEl: rootElement,
 	});
 
