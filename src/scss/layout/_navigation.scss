@@ -1,144 +1,138 @@
 .navigation {
-	width: 100%;
-	height: 80px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: $color-white;
-	z-index: 999999;
-	transition: 0.5s;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-white;
+  z-index: 999999;
+  transition: 0.5s;
 
-	&__social,
-	&__hamburger {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		flex-basis: 150px;
-	}
+  &__social,
+  &__hamburger {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 150px;
+  }
 
-	&__hamburger {
-		justify-content: flex-end;
-		margin-right: 20px;
+  &__hamburger {
+    justify-content: flex-end;
+    margin-right: 20px;
 
-		@include mq(large) {
-			display: none;
-		}
-	}
+    @include mq(large) {
+      display: none;
+    }
+  }
 
-	&__icon {
-		font-size: 2.9rem;
-		color: $color-light-black;
-		transition: 0.5s;
+  &__icon {
+    font-size: 2.9rem;
+    color: $color-light-black;
+    transition: 0.5s;
 
-		@include mq(medium) {
-			font-size: 2.5rem;
-		}
+    @include mq(medium) {
+      font-size: 2.5rem;
+    }
 
-		@include mq(large) {
-			&:hover {
-				color: $color-blue;
-			}
-		}
-	}
+    @include mq(large) {
+      &:hover {
+        color: $color-blue;
+      }
+    }
+  }
 
-	&__flag--poland {
-		width: 25px;
-		height: 25px;
-		background: url('#{$relative-path}poland.svg');
-	}
+  &__menu {
+    height: 45vh;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    transition: 0.5s;
 
-	&__menu {
-		height: 45vh;
-		width: 100%;
-		position: absolute;
-		top: 80px;
-		left: -100%;
-		transition: 0.5s;
+    &--active {
+      left: 0%;
+    }
 
-		&--active {
-			left: 0%;
-		}
+    @include mq(large) {
+      position: relative;
+      top: 0;
+      left: 0%;
+      height: auto;
+      display: flex;
+      flex-basis: 700px;
+    }
+  }
 
-		@include mq(large) {
-			position: relative;
-			top: 0;
-			left: 0%;
-			height: auto;
-			display: flex;
-			flex-basis: 700px;
-		}
-	}
+  &__menu,
+  &__item {
+    background-color: $color-white;
+    z-index: 999999;
+  }
 
-	&__menu,
-	&__item {
-		background-color: $color-white;
-		z-index: 999999;
-	}
+  &__list,
+  &__item,
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
 
-	&__list,
-	&__item,
-	&__link {
-		width: 100%;
-		height: 100%;
-		display: flex;
-		align-items: center;
-	}
+  &__list {
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    box-shadow: -33px 50px 50px rgba(0, 0, 0, 0.1);
 
-	&__list {
-		padding: 0;
-		flex-direction: column;
-		justify-content: space-around;
-		list-style: none;
-		box-shadow: -33px 50px 50px rgba(0, 0, 0, 0.1);
+    @include mq(large) {
+      flex-direction: row;
+      box-shadow: none;
+    }
+  }
 
-		@include mq(large) {
-			flex-direction: row;
-			box-shadow: none;
-		}
-	}
+  &__item {
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+    transition: 0.5s;
 
-	&__item {
-		flex-direction: column;
-		justify-content: center;
-		border-bottom: 1px solid rgba(51, 51, 51, 0.1);
-		transition: 0.5s;
+    @include mq(large) {
+      border-bottom: none;
+    }
+  }
 
-		@include mq(large) {
-			border-bottom: none;
-		}
-	}
+  &__item:las(-1) {
+    border-bottom: none;
+  }
 
-	&__item:las(-1) {
-		border-bottom: none;
-	}
+  &__link {
+    position: relative;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    font-size: $font-size-regular;
+    color: $color-light-black;
+    text-decoration: none;
+    transition: 0.5s;
 
-	&__link {
-		position: relative;
-		top: 0;
-		left: 0;
-		justify-content: center;
-		font-size: $font-size-regular;
-		color: $color-light-black;
-		text-decoration: none;
-		transition: 0.5s;
-
-		@include mq(large) {
-			&::after {
-				content: '';
-				position: absolute;
-				bottom: -5px;
-				left: 20%;
-				width: 0%;
-				height: 2px;
-				background-color: $color-blue;
-				transition: 0.5s;
-			}
-			&:hover::after {
-				width: 60%;
-			}
-		}
-	}
+    @include mq(large) {
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 20%;
+        width: 0%;
+        height: 2px;
+        background-color: $color-blue;
+        transition: 0.5s;
+      }
+      &:hover::after {
+        width: 60%;
+      }
+    }
+  }
 }
